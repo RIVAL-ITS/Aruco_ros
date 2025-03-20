@@ -1,0 +1,6 @@
+Invoking command in '/home/ichbinwil/Opencv_ROS/build/aruco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ichbinwil/Opencv_ROS/src/aruco -DCMAKE_INSTALL_PREFIX=/home/ichbinwil/Opencv_ROS/install/aruco
+Invoked command in '/home/ichbinwil/Opencv_ROS/build/aruco' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ichbinwil/Opencv_ROS/src/aruco -DCMAKE_INSTALL_PREFIX=/home/ichbinwil/Opencv_ROS/install/aruco
+Invoking command in '/home/ichbinwil/Opencv_ROS/build/aruco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ichbinwil/Opencv_ROS/build/aruco -- -j8 -l8
+Invoked command in '/home/ichbinwil/Opencv_ROS/build/aruco' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ichbinwil/Opencv_ROS/build/aruco -- -j8 -l8
+Invoking command in '/home/ichbinwil/Opencv_ROS/build/aruco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ichbinwil/Opencv_ROS/build/aruco
+Invoked command in '/home/ichbinwil/Opencv_ROS/build/aruco' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ichbinwil/Opencv_ROS/build/aruco

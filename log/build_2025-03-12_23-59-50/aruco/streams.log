@@ -1,0 +1,26 @@
+[0.024s] Invoking command in '/home/ichbinwil/Opencv_ROS/build/aruco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ichbinwil/Opencv_ROS/build/aruco -- -j8 -l8
+[0.137s] [ 50%] [32mBuilding CXX object CMakeFiles/aruco_detect.dir/src/aruco_detect.cpp.o[0m
+[7.845s] [100%] [32m[1mLinking CXX executable aruco_detect[0m
+[8.712s] [100%] Built target aruco_detect
+[8.733s] Invoked command in '/home/ichbinwil/Opencv_ROS/build/aruco' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ichbinwil/Opencv_ROS/build/aruco -- -j8 -l8
+[8.752s] Invoking command in '/home/ichbinwil/Opencv_ROS/build/aruco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ichbinwil/Opencv_ROS/build/aruco
+[8.765s] -- Install configuration: ""
+[8.765s] -- Installing: /home/ichbinwil/Opencv_ROS/install/aruco/lib/aruco/aruco_detect
+[8.767s] -- Set runtime path of "/home/ichbinwil/Opencv_ROS/install/aruco/lib/aruco/aruco_detect" to ""
+[8.767s] -- Up-to-date: /home/ichbinwil/Opencv_ROS/install/aruco/share/ament_index/resource_index/package_run_dependencies/aruco
+[8.768s] -- Up-to-date: /home/ichbinwil/Opencv_ROS/install/aruco/share/ament_index/resource_index/parent_prefix_path/aruco
+[8.768s] -- Up-to-date: /home/ichbinwil/Opencv_ROS/install/aruco/share/aruco/environment/ament_prefix_path.sh
+[8.768s] -- Up-to-date: /home/ichbinwil/Opencv_ROS/install/aruco/share/aruco/environment/ament_prefix_path.dsv
+[8.768s] -- Up-to-date: /home/ichbinwil/Opencv_ROS/install/aruco/share/aruco/environment/path.sh
+[8.769s] -- Up-to-date: /home/ichbinwil/Opencv_ROS/install/aruco/share/aruco/environment/path.dsv
+[8.769s] -- Up-to-date: /home/ichbinwil/Opencv_ROS/install/aruco/share/aruco/local_setup.bash
+[8.769s] -- Up-to-date: /home/ichbinwil/Opencv_ROS/install/aruco/share/aruco/local_setup.sh
+[8.769s] -- Up-to-date: /home/ichbinwil/Opencv_ROS/install/aruco/share/aruco/local_setup.zsh
+[8.770s] -- Up-to-date: /home/ichbinwil/Opencv_ROS/install/aruco/share/aruco/local_setup.dsv
+[8.770s] -- Installing: /home/ichbinwil/Opencv_ROS/install/aruco/share/aruco/package.dsv
+[8.770s] -- Up-to-date: /home/ichbinwil/Opencv_ROS/install/aruco/share/ament_index/resource_index/packages/aruco
+[8.771s] -- Up-to-date: /home/ichbinwil/Opencv_ROS/install/aruco/share/aruco/cmake/ament_cmake_export_dependencies-extras.cmake
+[8.771s] -- Up-to-date: /home/ichbinwil/Opencv_ROS/install/aruco/share/aruco/cmake/arucoConfig.cmake
+[8.771s] -- Up-to-date: /home/ichbinwil/Opencv_ROS/install/aruco/share/aruco/cmake/arucoConfig-version.cmake
+[8.771s] -- Up-to-date: /home/ichbinwil/Opencv_ROS/install/aruco/share/aruco/package.xml
+[8.774s] Invoked command in '/home/ichbinwil/Opencv_ROS/build/aruco' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ichbinwil/Opencv_ROS/build/aruco

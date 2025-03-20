@@ -1,0 +1,119 @@
+[0.000000] (-) TimerEvent: {}
+[0.001835] (aruco) JobQueued: {'identifier': 'aruco', 'dependencies': OrderedDict()}
+[0.002057] (aruco) JobStarted: {'identifier': 'aruco'}
+[0.026727] (aruco) JobProgress: {'identifier': 'aruco', 'progress': 'cmake'}
+[0.027971] (aruco) JobProgress: {'identifier': 'aruco', 'progress': 'build'}
+[0.029251] (aruco) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ichbinwil/Opencv_ROS/build/aruco', '--', '-j8', '-l8'], 'cwd': '/home/ichbinwil/Opencv_ROS/build/aruco', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ichbinwil'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('Pangolin_DIR', '/usr/local/lib/cmake/Pangolin'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ichbinwil/orbslam_ws/install/ros_msg/lib:/home/ichbinwil/orbslam_ws/install/romusa2_messages/lib:/home/ichbinwil/orbslam_ws/install/my_package/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ichbinwil'), ('OLDPWD', '/home/ichbinwil/Opencv_ROS/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('MANAGERPID', '1604'), ('SYSTEMD_EXEC_PID', '1948'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2512'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ichbinwil/Opencv_ROS/install:/home/ichbinwil/orbslam_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ichbinwil'), ('JOURNAL_STREAM', '8:18508'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ichbinwil'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/ichbinwil/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ichbinwil:@/tmp/.ICE-unix/1747,unix/ichbinwil:/tmp/.ICE-unix/1747'), ('INVOCATION_ID', '6ba40908ad904c9d81167f558e384b86'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.AC7M32'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ichbinwil/Opencv_ROS/install/aruco:/home/ichbinwil/orbslam_ws/install/ros_msg:/home/ichbinwil/orbslam_ws/install/romusa2_messages:/home/ichbinwil/orbslam_ws/install/orbslam3:/home/ichbinwil/orbslam_ws/install/my_program:/home/ichbinwil/orbslam_ws/install/my_package:/home/ichbinwil/orbslam_ws/install/camera_input:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:e7eefe69-cff2-439d-806c-e640840c3e13'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ichbinwil/Opencv_ROS/build/aruco'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ichbinwil/orbslam_ws/install/ros_msg/local/lib/python3.10/dist-packages:/home/ichbinwil/orbslam_ws/install/romusa2_messages/local/lib/python3.10/dist-packages:/home/ichbinwil/orbslam_ws/install/my_package/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ichbinwil/Opencv_ROS/install/aruco:/home/ichbinwil/orbslam_ws/install/ros_msg:/home/ichbinwil/orbslam_ws/install/romusa2_messages:/home/ichbinwil/orbslam_ws/install/orbslam3:/home/ichbinwil/orbslam_ws/install/my_program:/home/ichbinwil/orbslam_ws/install/my_package:/home/ichbinwil/orbslam_ws/install/camera_input:/opt/ros/humble')]), 'shell': False}
+[0.099474] (-) TimerEvent: {}
+[0.130953] (aruco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target aruco_detect\x1b[0m\n'}
+[0.172465] (aruco) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/aruco_detect.dir/src/aruco_detect.cpp.o\x1b[0m\n'}
+[0.199624] (-) TimerEvent: {}
+[0.300110] (-) TimerEvent: {}
+[0.400571] (-) TimerEvent: {}
+[0.501065] (-) TimerEvent: {}
+[0.601493] (-) TimerEvent: {}
+[0.702732] (-) TimerEvent: {}
+[0.803331] (-) TimerEvent: {}
+[0.903752] (-) TimerEvent: {}
+[1.004192] (-) TimerEvent: {}
+[1.104644] (-) TimerEvent: {}
+[1.205113] (-) TimerEvent: {}
+[1.305529] (-) TimerEvent: {}
+[1.405877] (-) TimerEvent: {}
+[1.506243] (-) TimerEvent: {}
+[1.606614] (-) TimerEvent: {}
+[1.707021] (-) TimerEvent: {}
+[1.807395] (-) TimerEvent: {}
+[1.907773] (-) TimerEvent: {}
+[2.008193] (-) TimerEvent: {}
+[2.108566] (-) TimerEvent: {}
+[2.208952] (-) TimerEvent: {}
+[2.309429] (-) TimerEvent: {}
+[2.409963] (-) TimerEvent: {}
+[2.510429] (-) TimerEvent: {}
+[2.611015] (-) TimerEvent: {}
+[2.711506] (-) TimerEvent: {}
+[2.811895] (-) TimerEvent: {}
+[2.912538] (-) TimerEvent: {}
+[3.013070] (-) TimerEvent: {}
+[3.113583] (-) TimerEvent: {}
+[3.214138] (-) TimerEvent: {}
+[3.314645] (-) TimerEvent: {}
+[3.415246] (-) TimerEvent: {}
+[3.515746] (-) TimerEvent: {}
+[3.616238] (-) TimerEvent: {}
+[3.716673] (-) TimerEvent: {}
+[3.817128] (-) TimerEvent: {}
+[3.917481] (-) TimerEvent: {}
+[4.017844] (-) TimerEvent: {}
+[4.118213] (-) TimerEvent: {}
+[4.218649] (-) TimerEvent: {}
+[4.319110] (-) TimerEvent: {}
+[4.419558] (-) TimerEvent: {}
+[4.519944] (-) TimerEvent: {}
+[4.620323] (-) TimerEvent: {}
+[4.720700] (-) TimerEvent: {}
+[4.821133] (-) TimerEvent: {}
+[4.921524] (-) TimerEvent: {}
+[5.021908] (-) TimerEvent: {}
+[5.122309] (-) TimerEvent: {}
+[5.222709] (-) TimerEvent: {}
+[5.323216] (-) TimerEvent: {}
+[5.423878] (-) TimerEvent: {}
+[5.524433] (-) TimerEvent: {}
+[5.624962] (-) TimerEvent: {}
+[5.725548] (-) TimerEvent: {}
+[5.826158] (-) TimerEvent: {}
+[5.926665] (-) TimerEvent: {}
+[6.027283] (-) TimerEvent: {}
+[6.127805] (-) TimerEvent: {}
+[6.228299] (-) TimerEvent: {}
+[6.328828] (-) TimerEvent: {}
+[6.429278] (-) TimerEvent: {}
+[6.529733] (-) TimerEvent: {}
+[6.630201] (-) TimerEvent: {}
+[6.730627] (-) TimerEvent: {}
+[6.831123] (-) TimerEvent: {}
+[6.931546] (-) TimerEvent: {}
+[7.031946] (-) TimerEvent: {}
+[7.132386] (-) TimerEvent: {}
+[7.232821] (-) TimerEvent: {}
+[7.333198] (-) TimerEvent: {}
+[7.433610] (-) TimerEvent: {}
+[7.504889] (aruco) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable aruco_detect\x1b[0m\n'}
+[7.533726] (-) TimerEvent: {}
+[7.634093] (-) TimerEvent: {}
+[7.734466] (-) TimerEvent: {}
+[7.834878] (-) TimerEvent: {}
+[7.935273] (-) TimerEvent: {}
+[8.035655] (-) TimerEvent: {}
+[8.136045] (-) TimerEvent: {}
+[8.236412] (-) TimerEvent: {}
+[8.336752] (-) TimerEvent: {}
+[8.338433] (aruco) StdoutLine: {'line': b'[100%] Built target aruco_detect\n'}
+[8.359737] (aruco) CommandEnded: {'returncode': 0}
+[8.361430] (aruco) JobProgress: {'identifier': 'aruco', 'progress': 'install'}
+[8.380906] (aruco) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ichbinwil/Opencv_ROS/build/aruco'], 'cwd': '/home/ichbinwil/Opencv_ROS/build/aruco', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ichbinwil'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('Pangolin_DIR', '/usr/local/lib/cmake/Pangolin'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ichbinwil/orbslam_ws/install/ros_msg/lib:/home/ichbinwil/orbslam_ws/install/romusa2_messages/lib:/home/ichbinwil/orbslam_ws/install/my_package/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ichbinwil'), ('OLDPWD', '/home/ichbinwil/Opencv_ROS/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('MANAGERPID', '1604'), ('SYSTEMD_EXEC_PID', '1948'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2512'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ichbinwil/Opencv_ROS/install:/home/ichbinwil/orbslam_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ichbinwil'), ('JOURNAL_STREAM', '8:18508'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ichbinwil'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/ichbinwil/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ichbinwil:@/tmp/.ICE-unix/1747,unix/ichbinwil:/tmp/.ICE-unix/1747'), ('INVOCATION_ID', '6ba40908ad904c9d81167f558e384b86'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.AC7M32'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ichbinwil/Opencv_ROS/install/aruco:/home/ichbinwil/orbslam_ws/install/ros_msg:/home/ichbinwil/orbslam_ws/install/romusa2_messages:/home/ichbinwil/orbslam_ws/install/orbslam3:/home/ichbinwil/orbslam_ws/install/my_program:/home/ichbinwil/orbslam_ws/install/my_package:/home/ichbinwil/orbslam_ws/install/camera_input:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:e7eefe69-cff2-439d-806c-e640840c3e13'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ichbinwil/Opencv_ROS/build/aruco'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ichbinwil/orbslam_ws/install/ros_msg/local/lib/python3.10/dist-packages:/home/ichbinwil/orbslam_ws/install/romusa2_messages/local/lib/python3.10/dist-packages:/home/ichbinwil/orbslam_ws/install/my_package/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ichbinwil/Opencv_ROS/install/aruco:/home/ichbinwil/orbslam_ws/install/ros_msg:/home/ichbinwil/orbslam_ws/install/romusa2_messages:/home/ichbinwil/orbslam_ws/install/orbslam3:/home/ichbinwil/orbslam_ws/install/my_program:/home/ichbinwil/orbslam_ws/install/my_package:/home/ichbinwil/orbslam_ws/install/camera_input:/opt/ros/humble')]), 'shell': False}
+[8.394203] (aruco) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.394632] (aruco) StdoutLine: {'line': b'-- Installing: /home/ichbinwil/Opencv_ROS/install/aruco/lib/aruco/aruco_detect\n'}
+[8.395938] (aruco) StdoutLine: {'line': b'-- Set runtime path of "/home/ichbinwil/Opencv_ROS/install/aruco/lib/aruco/aruco_detect" to ""\n'}
+[8.396564] (aruco) StdoutLine: {'line': b'-- Up-to-date: /home/ichbinwil/Opencv_ROS/install/aruco/share/ament_index/resource_index/package_run_dependencies/aruco\n'}
+[8.397083] (aruco) StdoutLine: {'line': b'-- Up-to-date: /home/ichbinwil/Opencv_ROS/install/aruco/share/ament_index/resource_index/parent_prefix_path/aruco\n'}
+[8.397357] (aruco) StdoutLine: {'line': b'-- Up-to-date: /home/ichbinwil/Opencv_ROS/install/aruco/share/aruco/environment/ament_prefix_path.sh\n'}
+[8.397653] (aruco) StdoutLine: {'line': b'-- Up-to-date: /home/ichbinwil/Opencv_ROS/install/aruco/share/aruco/environment/ament_prefix_path.dsv\n'}
+[8.398090] (aruco) StdoutLine: {'line': b'-- Up-to-date: /home/ichbinwil/Opencv_ROS/install/aruco/share/aruco/environment/path.sh\n'}
+[8.398397] (aruco) StdoutLine: {'line': b'-- Up-to-date: /home/ichbinwil/Opencv_ROS/install/aruco/share/aruco/environment/path.dsv\n'}
+[8.398697] (aruco) StdoutLine: {'line': b'-- Up-to-date: /home/ichbinwil/Opencv_ROS/install/aruco/share/aruco/local_setup.bash\n'}
+[8.399014] (aruco) StdoutLine: {'line': b'-- Up-to-date: /home/ichbinwil/Opencv_ROS/install/aruco/share/aruco/local_setup.sh\n'}
+[8.399223] (aruco) StdoutLine: {'line': b'-- Up-to-date: /home/ichbinwil/Opencv_ROS/install/aruco/share/aruco/local_setup.zsh\n'}
+[8.399439] (aruco) StdoutLine: {'line': b'-- Up-to-date: /home/ichbinwil/Opencv_ROS/install/aruco/share/aruco/local_setup.dsv\n'}
+[8.399608] (aruco) StdoutLine: {'line': b'-- Installing: /home/ichbinwil/Opencv_ROS/install/aruco/share/aruco/package.dsv\n'}
+[8.399758] (aruco) StdoutLine: {'line': b'-- Up-to-date: /home/ichbinwil/Opencv_ROS/install/aruco/share/ament_index/resource_index/packages/aruco\n'}
+[8.400060] (aruco) StdoutLine: {'line': b'-- Up-to-date: /home/ichbinwil/Opencv_ROS/install/aruco/share/aruco/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[8.400253] (aruco) StdoutLine: {'line': b'-- Up-to-date: /home/ichbinwil/Opencv_ROS/install/aruco/share/aruco/cmake/arucoConfig.cmake\n'}
+[8.400458] (aruco) StdoutLine: {'line': b'-- Up-to-date: /home/ichbinwil/Opencv_ROS/install/aruco/share/aruco/cmake/arucoConfig-version.cmake\n'}
+[8.400809] (aruco) StdoutLine: {'line': b'-- Up-to-date: /home/ichbinwil/Opencv_ROS/install/aruco/share/aruco/package.xml\n'}
+[8.402387] (aruco) CommandEnded: {'returncode': 0}
+[8.436884] (-) TimerEvent: {}
+[8.439952] (aruco) JobEnded: {'identifier': 'aruco', 'rc': 0}
+[8.440793] (-) EventReactorShutdown: {}
