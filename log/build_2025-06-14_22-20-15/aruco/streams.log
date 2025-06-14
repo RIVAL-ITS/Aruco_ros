@@ -1,0 +1,48 @@
+[0.019s] Invoking command in '/home/ichbinwil/Documents/Aruco_ros/build/aruco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ichbinwil/Documents/Aruco_ros/src/aruco -DCMAKE_INSTALL_PREFIX=/home/ichbinwil/Documents/Aruco_ros/install/aruco
+[0.392s] -- The C compiler identification is GNU 13.3.0
+[0.673s] -- The CXX compiler identification is GNU 13.3.0
+[0.756s] -- Detecting C compiler ABI info
+[1.193s] -- Detecting C compiler ABI info - done
+[1.234s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.236s] -- Detecting C compile features
+[1.238s] -- Detecting C compile features - done
+[1.263s] -- Detecting CXX compiler ABI info
+[1.590s] -- Detecting CXX compiler ABI info - done
+[1.614s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.615s] -- Detecting CXX compile features
+[1.616s] -- Detecting CXX compile features - done
+[1.639s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.177s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.594s] -- Found rclcpp: 28.1.9 (/opt/ros/jazzy/share/rclcpp/cmake)
+[2.860s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[2.935s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[3.031s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.127s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.393s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[3.406s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[3.776s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[3.889s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[3.938s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.178s] -- Found OpenCV: /usr (found version "4.6.0") 
+[4.188s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[4.455s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.455s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/ichbinwil/Documents/Aruco_ros/src/aruco/include>
+[4.455s] -- Configured cppcheck exclude dirs and/or files: 
+[4.459s] -- Added test 'lint_cmake' to check CMake code style
+[4.462s] -- Added test 'uncrustify' to check C / C++ code style
+[4.463s] -- Configured uncrustify additional arguments: 
+[4.465s] -- Added test 'xmllint' to check XML markup files
+[4.472s] -- Configuring done (4.4s)
+[4.510s] -- Generating done (0.0s)
+[4.521s] -- Build files have been written to: /home/ichbinwil/Documents/Aruco_ros/build/aruco
+[4.539s] Invoked command in '/home/ichbinwil/Documents/Aruco_ros/build/aruco' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ichbinwil/Documents/Aruco_ros/src/aruco -DCMAKE_INSTALL_PREFIX=/home/ichbinwil/Documents/Aruco_ros/install/aruco
+[4.541s] Invoking command in '/home/ichbinwil/Documents/Aruco_ros/build/aruco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ichbinwil/Documents/Aruco_ros/build/aruco -- -j8 -l8
+[4.629s] [ 50%] [32mBuilding CXX object CMakeFiles/aruco_detect.dir/src/aruco_detect.cpp.o[0m
+[9.231s] [01m[K/home/ichbinwil/Documents/Aruco_ros/src/aruco/src/aruco_detect.cpp:[m[K In member function ‘[01m[Kvoid ArucoDetectNode::[01;32m[Kimage_callback[m[K()[m[K’:
+[9.231s] [01m[K/home/ichbinwil/Documents/Aruco_ros/src/aruco/src/aruco_detect.cpp:111:24:[m[K [01;31m[Kerror: [m[K‘[01m[KdrawAxis[m[K’ is not a member of ‘[01m[Kcv::aruco[m[K’
+[9.231s]   111 |             cv::aruco::[01;31m[KdrawAxis[m[K(frame, cameraMatrix, distCoeffs, rvecs[i], tvecs[i], 15);
+[9.231s]       |                        [01;31m[K^~~~~~~~[m[K
+[11.463s] gmake[2]: *** [CMakeFiles/aruco_detect.dir/build.make:76: CMakeFiles/aruco_detect.dir/src/aruco_detect.cpp.o] Error 1
+[11.463s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/aruco_detect.dir/all] Error 2
+[11.464s] gmake: *** [Makefile:146: all] Error 2
+[11.467s] Invoked command in '/home/ichbinwil/Documents/Aruco_ros/build/aruco' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ichbinwil/Documents/Aruco_ros/build/aruco -- -j8 -l8

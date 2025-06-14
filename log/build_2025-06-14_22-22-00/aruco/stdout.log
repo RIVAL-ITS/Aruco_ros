@@ -1,0 +1,22 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/aruco_detect.dir/src/aruco_detect.cpp.o[0m
+[100%] [32m[1mLinking CXX executable aruco_detect[0m
+[100%] Built target aruco_detect
+-- Install configuration: ""
+-- Installing: /home/ichbinwil/Documents/Aruco_ros/install/aruco/lib/aruco/aruco_detect
+-- Set non-toolchain portion of runtime path of "/home/ichbinwil/Documents/Aruco_ros/install/aruco/lib/aruco/aruco_detect" to ""
+-- Installing: /home/ichbinwil/Documents/Aruco_ros/install/aruco/share/ament_index/resource_index/package_run_dependencies/aruco
+-- Installing: /home/ichbinwil/Documents/Aruco_ros/install/aruco/share/ament_index/resource_index/parent_prefix_path/aruco
+-- Installing: /home/ichbinwil/Documents/Aruco_ros/install/aruco/share/aruco/environment/ament_prefix_path.sh
+-- Installing: /home/ichbinwil/Documents/Aruco_ros/install/aruco/share/aruco/environment/ament_prefix_path.dsv
+-- Installing: /home/ichbinwil/Documents/Aruco_ros/install/aruco/share/aruco/environment/path.sh
+-- Installing: /home/ichbinwil/Documents/Aruco_ros/install/aruco/share/aruco/environment/path.dsv
+-- Installing: /home/ichbinwil/Documents/Aruco_ros/install/aruco/share/aruco/local_setup.bash
+-- Installing: /home/ichbinwil/Documents/Aruco_ros/install/aruco/share/aruco/local_setup.sh
+-- Installing: /home/ichbinwil/Documents/Aruco_ros/install/aruco/share/aruco/local_setup.zsh
+-- Installing: /home/ichbinwil/Documents/Aruco_ros/install/aruco/share/aruco/local_setup.dsv
+-- Installing: /home/ichbinwil/Documents/Aruco_ros/install/aruco/share/aruco/package.dsv
+-- Installing: /home/ichbinwil/Documents/Aruco_ros/install/aruco/share/ament_index/resource_index/packages/aruco
+-- Installing: /home/ichbinwil/Documents/Aruco_ros/install/aruco/share/aruco/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/ichbinwil/Documents/Aruco_ros/install/aruco/share/aruco/cmake/arucoConfig.cmake
+-- Installing: /home/ichbinwil/Documents/Aruco_ros/install/aruco/share/aruco/cmake/arucoConfig-version.cmake
+-- Installing: /home/ichbinwil/Documents/Aruco_ros/install/aruco/share/aruco/package.xml

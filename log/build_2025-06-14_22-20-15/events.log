@@ -1,0 +1,169 @@
+[0.000000] (-) TimerEvent: {}
+[0.000160] (aruco) JobQueued: {'identifier': 'aruco', 'dependencies': OrderedDict()}
+[0.000780] (aruco) JobStarted: {'identifier': 'aruco'}
+[0.017326] (aruco) JobProgress: {'identifier': 'aruco', 'progress': 'cmake'}
+[0.018229] (aruco) Command: {'cmd': ['/usr/bin/cmake', '/home/ichbinwil/Documents/Aruco_ros/src/aruco', '-DCMAKE_INSTALL_PREFIX=/home/ichbinwil/Documents/Aruco_ros/install/aruco'], 'cwd': '/home/ichbinwil/Documents/Aruco_ros/build/aruco', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ichbinwil', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/libphidget22/lib:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ichbinwil', 'OLDPWD': '/home/ichbinwil/Documents', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2773', 'SYSTEMD_EXEC_PID': '3222', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3796', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ichbinwil', 'IGN_GAZEBO_MODEL_PATH': '/opt/ros/jazzy/share', 'JOURNAL_STREAM': '9:18228', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ichbinwil', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/opt/ros/jazzy/share', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/ichbinwil/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/ichbinwil/.local/bin:/home/ichbinwil/.local/bin', 'SESSION_MANAGER': 'local/ichbinwil:@/tmp/.ICE-unix/2999,unix/ichbinwil:/tmp/.ICE-unix/2999', 'INVOCATION_ID': '5e22108c7edf46c6892d6295b2bbd93d', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.5VOR72', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:af731bb0-50cf-4021-85c4-1e1b1197d559', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ichbinwil/Documents/Aruco_ros/build/aruco', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099610] (-) TimerEvent: {}
+[0.200368] (-) TimerEvent: {}
+[0.301095] (-) TimerEvent: {}
+[0.392721] (aruco) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.401293] (-) TimerEvent: {}
+[0.501906] (-) TimerEvent: {}
+[0.602543] (-) TimerEvent: {}
+[0.673006] (aruco) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.702754] (-) TimerEvent: {}
+[0.755906] (aruco) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.802994] (-) TimerEvent: {}
+[0.903669] (-) TimerEvent: {}
+[1.004365] (-) TimerEvent: {}
+[1.105036] (-) TimerEvent: {}
+[1.193815] (aruco) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.205209] (-) TimerEvent: {}
+[1.234699] (aruco) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.236887] (aruco) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.239080] (aruco) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.263079] (aruco) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.305368] (-) TimerEvent: {}
+[1.405888] (-) TimerEvent: {}
+[1.506503] (-) TimerEvent: {}
+[1.590093] (aruco) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.606604] (-) TimerEvent: {}
+[1.614388] (aruco) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.615453] (aruco) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.616628] (aruco) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.639501] (aruco) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[1.706812] (-) TimerEvent: {}
+[1.807276] (-) TimerEvent: {}
+[1.907881] (-) TimerEvent: {}
+[2.008428] (-) TimerEvent: {}
+[2.108828] (-) TimerEvent: {}
+[2.177817] (aruco) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[2.209054] (-) TimerEvent: {}
+[2.309725] (-) TimerEvent: {}
+[2.410304] (-) TimerEvent: {}
+[2.510600] (-) TimerEvent: {}
+[2.595023] (aruco) StdoutLine: {'line': b'-- Found rclcpp: 28.1.9 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[2.610761] (-) TimerEvent: {}
+[2.711144] (-) TimerEvent: {}
+[2.811735] (-) TimerEvent: {}
+[2.860903] (aruco) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[2.911902] (-) TimerEvent: {}
+[2.935431] (aruco) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[3.012164] (-) TimerEvent: {}
+[3.031912] (aruco) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.112290] (-) TimerEvent: {}
+[3.128159] (aruco) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.212433] (-) TimerEvent: {}
+[3.312729] (-) TimerEvent: {}
+[3.393449] (aruco) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[3.407145] (aruco) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.412860] (-) TimerEvent: {}
+[3.513176] (-) TimerEvent: {}
+[3.613608] (-) TimerEvent: {}
+[3.714358] (-) TimerEvent: {}
+[3.776415] (aruco) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[3.814560] (-) TimerEvent: {}
+[3.888909] (aruco) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[3.914666] (-) TimerEvent: {}
+[3.938634] (aruco) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.014795] (-) TimerEvent: {}
+[4.115143] (-) TimerEvent: {}
+[4.178326] (aruco) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.6.0") \n'}
+[4.188212] (aruco) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[4.215295] (-) TimerEvent: {}
+[4.315635] (-) TimerEvent: {}
+[4.416063] (-) TimerEvent: {}
+[4.455339] (aruco) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[4.455847] (aruco) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/ichbinwil/Documents/Aruco_ros/src/aruco/include>\n'}
+[4.456146] (aruco) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[4.459161] (aruco) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.462918] (aruco) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[4.463227] (aruco) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[4.465564] (aruco) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.472147] (aruco) StdoutLine: {'line': b'-- Configuring done (4.4s)\n'}
+[4.510331] (aruco) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[4.516215] (-) TimerEvent: {}
+[4.521128] (aruco) StdoutLine: {'line': b'-- Build files have been written to: /home/ichbinwil/Documents/Aruco_ros/build/aruco\n'}
+[4.539557] (aruco) CommandEnded: {'returncode': 0}
+[4.540410] (aruco) JobProgress: {'identifier': 'aruco', 'progress': 'build'}
+[4.541606] (aruco) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ichbinwil/Documents/Aruco_ros/build/aruco', '--', '-j8', '-l8'], 'cwd': '/home/ichbinwil/Documents/Aruco_ros/build/aruco', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ichbinwil', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/libphidget22/lib:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ichbinwil', 'OLDPWD': '/home/ichbinwil/Documents', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2773', 'SYSTEMD_EXEC_PID': '3222', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3796', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ichbinwil', 'IGN_GAZEBO_MODEL_PATH': '/opt/ros/jazzy/share', 'JOURNAL_STREAM': '9:18228', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ichbinwil', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/opt/ros/jazzy/share', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/ichbinwil/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/ichbinwil/.local/bin:/home/ichbinwil/.local/bin', 'SESSION_MANAGER': 'local/ichbinwil:@/tmp/.ICE-unix/2999,unix/ichbinwil:/tmp/.ICE-unix/2999', 'INVOCATION_ID': '5e22108c7edf46c6892d6295b2bbd93d', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.5VOR72', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:af731bb0-50cf-4021-85c4-1e1b1197d559', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ichbinwil/Documents/Aruco_ros/build/aruco', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[4.616355] (-) TimerEvent: {}
+[4.630091] (aruco) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/aruco_detect.dir/src/aruco_detect.cpp.o\x1b[0m\n'}
+[4.716497] (-) TimerEvent: {}
+[4.816822] (-) TimerEvent: {}
+[4.917093] (-) TimerEvent: {}
+[5.017400] (-) TimerEvent: {}
+[5.117765] (-) TimerEvent: {}
+[5.218238] (-) TimerEvent: {}
+[5.318551] (-) TimerEvent: {}
+[5.418891] (-) TimerEvent: {}
+[5.519243] (-) TimerEvent: {}
+[5.619556] (-) TimerEvent: {}
+[5.719865] (-) TimerEvent: {}
+[5.820193] (-) TimerEvent: {}
+[5.920501] (-) TimerEvent: {}
+[6.020826] (-) TimerEvent: {}
+[6.121136] (-) TimerEvent: {}
+[6.221446] (-) TimerEvent: {}
+[6.321762] (-) TimerEvent: {}
+[6.422095] (-) TimerEvent: {}
+[6.522433] (-) TimerEvent: {}
+[6.622754] (-) TimerEvent: {}
+[6.723073] (-) TimerEvent: {}
+[6.823385] (-) TimerEvent: {}
+[6.923731] (-) TimerEvent: {}
+[7.024064] (-) TimerEvent: {}
+[7.124382] (-) TimerEvent: {}
+[7.224699] (-) TimerEvent: {}
+[7.325030] (-) TimerEvent: {}
+[7.425350] (-) TimerEvent: {}
+[7.525663] (-) TimerEvent: {}
+[7.625956] (-) TimerEvent: {}
+[7.726318] (-) TimerEvent: {}
+[7.826675] (-) TimerEvent: {}
+[7.927080] (-) TimerEvent: {}
+[8.027466] (-) TimerEvent: {}
+[8.127792] (-) TimerEvent: {}
+[8.228111] (-) TimerEvent: {}
+[8.328418] (-) TimerEvent: {}
+[8.428739] (-) TimerEvent: {}
+[8.529039] (-) TimerEvent: {}
+[8.629363] (-) TimerEvent: {}
+[8.729674] (-) TimerEvent: {}
+[8.830011] (-) TimerEvent: {}
+[8.930324] (-) TimerEvent: {}
+[9.030642] (-) TimerEvent: {}
+[9.131007] (-) TimerEvent: {}
+[9.231336] (aruco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ichbinwil/Documents/Aruco_ros/src/aruco/src/aruco_detect.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ArucoDetectNode::\x1b[01;32m\x1b[Kimage_callback\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.231614] (-) TimerEvent: {}
+[9.231735] (aruco) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ichbinwil/Documents/Aruco_ros/src/aruco/src/aruco_detect.cpp:111:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KdrawAxis\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kcv::aruco\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.231913] (aruco) StderrLine: {'line': b'  111 |             cv::aruco::\x1b[01;31m\x1b[KdrawAxis\x1b[m\x1b[K(frame, cameraMatrix, distCoeffs, rvecs[i], tvecs[i], 15);\n'}
+[9.232044] (aruco) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[9.331766] (-) TimerEvent: {}
+[9.432097] (-) TimerEvent: {}
+[9.532422] (-) TimerEvent: {}
+[9.632754] (-) TimerEvent: {}
+[9.733079] (-) TimerEvent: {}
+[9.833393] (-) TimerEvent: {}
+[9.933720] (-) TimerEvent: {}
+[10.034060] (-) TimerEvent: {}
+[10.134381] (-) TimerEvent: {}
+[10.234718] (-) TimerEvent: {}
+[10.335088] (-) TimerEvent: {}
+[10.435517] (-) TimerEvent: {}
+[10.535929] (-) TimerEvent: {}
+[10.636344] (-) TimerEvent: {}
+[10.736807] (-) TimerEvent: {}
+[10.837251] (-) TimerEvent: {}
+[10.937799] (-) TimerEvent: {}
+[11.038276] (-) TimerEvent: {}
+[11.138617] (-) TimerEvent: {}
+[11.238960] (-) TimerEvent: {}
+[11.339332] (-) TimerEvent: {}
+[11.439716] (-) TimerEvent: {}
+[11.463643] (aruco) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/aruco_detect.dir/build.make:76: CMakeFiles/aruco_detect.dir/src/aruco_detect.cpp.o] Error 1\n'}
+[11.463977] (aruco) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/aruco_detect.dir/all] Error 2\n'}
+[11.464286] (aruco) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[11.467373] (aruco) CommandEnded: {'returncode': 2}
+[11.480296] (aruco) JobEnded: {'identifier': 'aruco', 'rc': 2}
+[11.490828] (-) EventReactorShutdown: {}

@@ -1,138 +1,121 @@
 #include <iostream>
 #include <vector>
-#include <opencv4/opencv2/opencv.hpp>
-#include <opencv4/opencv2/aruco.hpp>
+#include <opencv2/opencv.hpp>
+#include <opencv2/aruco.hpp>
 #include "rclcpp/rclcpp.hpp"
 
 using namespace std;
 using namespace cv;
 
-//TODO Variabel PnP
-/*std::vector<cv::Point3f> objectPoints = {
-    {-r, -r, 0},   // Kiri atas (dibalik)
-    {r, -r, 0},    // Kanan atas (dibalik)
-    {r, r, 0},     // Kanan bawah (dibalik)
-    {-r, r, 0}     // Kiri bawah (dibalik)
-};
-*/
-
-vector<cv::Point3f> objectPoints = {
-  {-7.5,-7.5,0},
-  {7.5,-7.5,0},
-  {7.5,7.5,0},
-  {-7.5,7.5,0},
-};
-
 class ArucoDetectNode : public rclcpp::Node {
-  public:
-  ArucoDetectNode():Node("aruco_degtec_node"){
-    timer_ = this->create_wall_timer(std::chrono::milliseconds(33), std::bind(&ArucoDetectNode::image_callback, this));
+public:
+    ArucoDetectNode() : Node("aruco_detect_node") {
+        // Buka kamera
+        cap.open("/dev/v4l/by-id/usb-BC-231018-A_XWF_1080P_PC_Camera-video-index0", cv::CAP_V4L2);
+        if (!cap.isOpened()) {
+            RCLCPP_ERROR(this->get_logger(), "Tidak dapat membuka kamera!");
+            return;
+        }
 
+        // Load kalibrasi kamera
+        fs = FileStorage("/home/ichbinwil/Documents/Aruco_ros/calibration.yaml", FileStorage::READ);
+        if (!fs.isOpened()) {
+            RCLCPP_ERROR(this->get_logger(), "Gagal membuka file kalibrasi!");
+            return;
+        }
 
-    cap.open("/dev/v4l/by-id/usb-BC-231018-A_XWF_1080P_PC_Camera-video-index0",cv::CAP_V4L2);
-    
-    if (!cap.isOpened()) {
-      std::cerr << "Error: Tidak dapat membuka kamera!\n";
-      return;
+        fs["cameraMatrix"] >> cameraMatrix;
+        fs["distCoeffs"] >> distCoeffs;
+        fs.release();
+
+        if (cameraMatrix.empty() || distCoeffs.empty()) {
+            RCLCPP_ERROR(this->get_logger(), "Parameter kalibrasi kosong!");
+            return;
+        }
+
+        // Inisialisasi dictionary ArUco
+        dictionary = aruco::getPredefinedDictionary(aruco::DICT_5X5_100);
+
+        // Panjang sisi marker (dalam cm atau meter, sesuaikan dengan objectPoints)
+        markerLength = 5.3f;
+
+        // Object points (urutan: top-left, top-right, bottom-right, bottom-left)
+        float m = markerLength / 2.0f;
+        objectPoints = {
+            {-m,  m, 0},
+            { m,  m, 0},
+            { m, -m, 0},
+            {-m, -m, 0}
+        };
+
+        // Buat timer callback
+        timer_ = this->create_wall_timer(
+            std::chrono::milliseconds(33),
+            std::bind(&ArucoDetectNode::image_callback, this)
+        );
     }
 
-    fs = cv::FileStorage("/home/ichbinwil/Opencv_ROS/calibration.yaml", cv::FileStorage::READ);
-
-
-    if (!fs.isOpened()) {
-        std::cerr << "Error opening calibration file!" << std::endl;
-        return;
-    }
-    fs["cameraMatrix"] >> cameraMatrix;
-    fs["distCoeffs"] >> distCoeffs;
-    fs.release();
-
-    if (cameraMatrix.empty() || distCoeffs.empty()) {
-        std::cerr << "Error: Calibration parameters are empty!" << std::endl;
-        return;
+    ~ArucoDetectNode() {
+        cap.release();
+        destroyAllWindows();
     }
 
-    // Pilih dictionary ArUco yang sesuai
-    dictionary = cv::aruco::getPredefinedDictionary(cv::aruco::DICT_5X5_100);
+private:
+    VideoCapture cap;
+    FileStorage fs;
+    Mat cameraMatrix, distCoeffs;
+    Ptr<aruco::Dictionary> dictionary;
+    vector<Point3f> objectPoints;
+    float markerLength;
+    rclcpp::TimerBase::SharedPtr timer_;
 
+    void image_callback() {
+        Mat frame;
+        cap >> frame;
 
-  }
+        if (frame.empty()) {
+            RCLCPP_WARN(this->get_logger(), "Frame kosong dari kamera!");
+            return;
+        }
 
-  ~ArucoDetectNode(){
+        vector<int> markerIds;
+        vector<vector<Point2f>> markerCorners;
+        aruco::detectMarkers(frame, dictionary, markerCorners, markerIds);
 
-    // Tutup kamera
-    cap.release();
-    cv::destroyAllWindows();
+        if (!markerIds.empty()) {
+            aruco::drawDetectedMarkers(frame, markerCorners, markerIds);
 
-  }
+            for (size_t i = 0; i < markerIds.size(); ++i) {
+                // Hitung pusat marker
+                Point2f center = (markerCorners[i][0] + markerCorners[i][1] +
+                                  markerCorners[i][2] + markerCorners[i][3]) / 4;
+                cout << "Marker ID: " << markerIds[i] << " | Center: " << center << endl;
 
-  private:
+                // Estimasi pose dengan solvePnP
+                Vec3d rvec, tvec;
+                bool success = solvePnP(objectPoints, markerCorners[i], cameraMatrix, distCoeffs, rvec, tvec);
 
-  cv::Mat cameraMatrix, distCoeffs;
-  cv::Ptr<cv::aruco::Dictionary> dictionary;
-  cv::VideoCapture cap;
-  cv::FileStorage fs;
-  rclcpp::TimerBase::SharedPtr timer_;
-
-
-  void image_callback(){
-    cv::Mat frame;
-    cap >> frame;  // Ambil frame dari kamera
-    if (frame.empty()) {
-        std::cerr << "Error: Frame kosong!\n";
-        return;
-    }
-
-    // Deteksi marker ArUco
-    std::vector<int> markerIds;
-    std::vector<std::vector<cv::Point2f>> markerCorners;
-    cv::aruco::detectMarkers(frame, dictionary, markerCorners, markerIds);
-
-    // Gambar hasil deteksi
-    if (!markerIds.empty()) {
-        cv::aruco::drawDetectedMarkers(frame, markerCorners, markerIds);
-
-        cv::Point2f center;
-
-        // Cetak posisi piksel dari setiap marker
-        for (size_t i = 0; i < markerIds.size(); ++i) {
-            std::cout << "Marker ID: " << markerIds[i] << std::endl;
-            for (size_t j = 0; j < markerCorners[i].size(); ++j) {
-                // std::cout << "Corner " << j << ": " << markerCorners[i][j] << std::endl;
-                center = (markerCorners[i][0] + markerCorners[i][1] + markerCorners[i][2] + markerCorners[i][3]) / 4;
+                if (success) {
+                    drawFrameAxes(frame, cameraMatrix, distCoeffs, rvec, tvec, markerLength);
+                    cout << "Pose (tvec) marker ID " << markerIds[i]
+                         << ": [" << tvec[0] << ", " << tvec[1] << ", " << tvec[2] << "]" << endl;
+                } else {
+                    RCLCPP_WARN(this->get_logger(), "Gagal solvePnP untuk marker ID %d", markerIds[i]);
+                }
             }
-            std::cout << "Center: " << center << endl;
+        } else {
+            cout << "Tidak ada marker terdeteksi." << endl;
         }
 
-        // Estimasi pose
-        std::vector<cv::Vec3d> rvecs, tvecs;
-        cv::aruco::estimatePoseSingleMarkers(markerCorners, 15, cameraMatrix, distCoeffs, rvecs, tvecs);
-        for (size_t i = 0; i < markerIds.size(); i++) {
-            cv::aruco::drawAxis(frame, cameraMatrix, distCoeffs, rvecs[i], tvecs[i], 15);
-
-            float x_cm = tvecs[i][0];
-            float y_cm = tvecs[i][1];
-            float z_cm = tvecs[i][2];
-
-            std::cout << "Translation vector for marker ID " << markerIds[i] << ": [" << x_cm << ", " << y_cm << ", " << z_cm << "]" << std::endl;
-        }
-
-    }else {
-        std::cout << "No markers detected." << std::endl;
+        imshow("ArUco Marker Detection", frame);
+        waitKey(1); // untuk update window
     }
-
-    // Tampilkan hasil di window
-    cv::imshow("ArUco Marker Detection", frame);
-    cv::waitKey(1);
-
-  }
-
 };
 
-int main(int argc, char **argv){
-  rclcpp::init(argc, argv);
-  auto node = std::make_shared<ArucoDetectNode>();
-  rclcpp::spin(node);
-  rclcpp::shutdown();
-  return 0;
+int main(int argc, char **argv) {
+    rclcpp::init(argc, argv);
+    auto node = std::make_shared<ArucoDetectNode>();
+    rclcpp::spin(node);
+    rclcpp::shutdown();
+    return 0;
 }

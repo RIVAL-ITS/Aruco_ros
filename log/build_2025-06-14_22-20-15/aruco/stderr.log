@@ -1,0 +1,7 @@
+[01m[K/home/ichbinwil/Documents/Aruco_ros/src/aruco/src/aruco_detect.cpp:[m[K In member function ‘[01m[Kvoid ArucoDetectNode::[01;32m[Kimage_callback[m[K()[m[K’:
+[01m[K/home/ichbinwil/Documents/Aruco_ros/src/aruco/src/aruco_detect.cpp:111:24:[m[K [01;31m[Kerror: [m[K‘[01m[KdrawAxis[m[K’ is not a member of ‘[01m[Kcv::aruco[m[K’
+  111 |             cv::aruco::[01;31m[KdrawAxis[m[K(frame, cameraMatrix, distCoeffs, rvecs[i], tvecs[i], 15);
+      |                        [01;31m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/aruco_detect.dir/build.make:76: CMakeFiles/aruco_detect.dir/src/aruco_detect.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/aruco_detect.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

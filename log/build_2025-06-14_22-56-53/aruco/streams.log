@@ -1,0 +1,19 @@
+[0.021s] Invoking command in '/home/ichbinwil/Documents/Aruco_ros/build/aruco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ichbinwil/Documents/Aruco_ros/build/aruco -- -j8 -l8
+[0.168s] [ 50%] [32mBuilding CXX object CMakeFiles/aruco_detect.dir/src/aruco_detect.cpp.o[0m
+[5.345s] [01m[K/home/ichbinwil/Documents/Aruco_ros/src/aruco/src/aruco_detect.cpp:[m[K In member function ‘[01m[Kvoid ArucoDetectNode::[01;32m[Kimage_callback[m[K()[m[K’:
+[5.345s] [01m[K/home/ichbinwil/Documents/Aruco_ros/src/aruco/src/aruco_detect.cpp:110:32:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd::vector<cv::Vec<double, 3> > rvecs[m[K’
+[5.345s]   110 |         std::vector<cv::Vec3d> [01;31m[Krvecs[m[K(markerIds.size()), tvecs(markerIds.size());
+[5.345s]       |                                [01;31m[K^~~~~[m[K
+[5.345s] [01m[K/home/ichbinwil/Documents/Aruco_ros/src/aruco/src/aruco_detect.cpp:108:32:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::vector<cv::Vec<double, 3> > rvecs[m[K’ previously declared here
+[5.346s]   108 |         std::vector<cv::Vec3d> [01;36m[Krvecs[m[K, tvecs;
+[5.346s]       |                                [01;36m[K^~~~~[m[K
+[5.346s] [01m[K/home/ichbinwil/Documents/Aruco_ros/src/aruco/src/aruco_detect.cpp:110:57:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd::vector<cv::Vec<double, 3> > tvecs[m[K’
+[5.346s]   110 |         std::vector<cv::Vec3d> rvecs(markerIds.size()), [01;31m[Ktvecs[m[K(markerIds.size());
+[5.346s]       |                                                         [01;31m[K^~~~~[m[K
+[5.346s] [01m[K/home/ichbinwil/Documents/Aruco_ros/src/aruco/src/aruco_detect.cpp:108:39:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::vector<cv::Vec<double, 3> > tvecs[m[K’ previously declared here
+[5.346s]   108 |         std::vector<cv::Vec3d> rvecs, [01;36m[Ktvecs[m[K;
+[5.346s]       |                                       [01;36m[K^~~~~[m[K
+[7.473s] gmake[2]: *** [CMakeFiles/aruco_detect.dir/build.make:76: CMakeFiles/aruco_detect.dir/src/aruco_detect.cpp.o] Error 1
+[7.473s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/aruco_detect.dir/all] Error 2
+[7.473s] gmake: *** [Makefile:146: all] Error 2
+[7.476s] Invoked command in '/home/ichbinwil/Documents/Aruco_ros/build/aruco' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ichbinwil/Documents/Aruco_ros/build/aruco -- -j8 -l8

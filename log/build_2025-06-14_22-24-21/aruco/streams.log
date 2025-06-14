@@ -1,0 +1,26 @@
+[0.021s] Invoking command in '/home/ichbinwil/Documents/Aruco_ros/build/aruco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ichbinwil/Documents/Aruco_ros/build/aruco -- -j8 -l8
+[0.189s] [ 50%] [32mBuilding CXX object CMakeFiles/aruco_detect.dir/src/aruco_detect.cpp.o[0m
+[7.773s] [100%] [32m[1mLinking CXX executable aruco_detect[0m
+[9.091s] [100%] Built target aruco_detect
+[9.114s] Invoked command in '/home/ichbinwil/Documents/Aruco_ros/build/aruco' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ichbinwil/Documents/Aruco_ros/build/aruco -- -j8 -l8
+[9.132s] Invoking command in '/home/ichbinwil/Documents/Aruco_ros/build/aruco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ichbinwil/Documents/Aruco_ros/build/aruco
+[9.148s] -- Install configuration: ""
+[9.148s] -- Installing: /home/ichbinwil/Documents/Aruco_ros/install/aruco/lib/aruco/aruco_detect
+[9.149s] -- Set non-toolchain portion of runtime path of "/home/ichbinwil/Documents/Aruco_ros/install/aruco/lib/aruco/aruco_detect" to ""
+[9.150s] -- Up-to-date: /home/ichbinwil/Documents/Aruco_ros/install/aruco/share/ament_index/resource_index/package_run_dependencies/aruco
+[9.150s] -- Up-to-date: /home/ichbinwil/Documents/Aruco_ros/install/aruco/share/ament_index/resource_index/parent_prefix_path/aruco
+[9.150s] -- Up-to-date: /home/ichbinwil/Documents/Aruco_ros/install/aruco/share/aruco/environment/ament_prefix_path.sh
+[9.151s] -- Up-to-date: /home/ichbinwil/Documents/Aruco_ros/install/aruco/share/aruco/environment/ament_prefix_path.dsv
+[9.151s] -- Up-to-date: /home/ichbinwil/Documents/Aruco_ros/install/aruco/share/aruco/environment/path.sh
+[9.151s] -- Up-to-date: /home/ichbinwil/Documents/Aruco_ros/install/aruco/share/aruco/environment/path.dsv
+[9.151s] -- Up-to-date: /home/ichbinwil/Documents/Aruco_ros/install/aruco/share/aruco/local_setup.bash
+[9.151s] -- Up-to-date: /home/ichbinwil/Documents/Aruco_ros/install/aruco/share/aruco/local_setup.sh
+[9.152s] -- Up-to-date: /home/ichbinwil/Documents/Aruco_ros/install/aruco/share/aruco/local_setup.zsh
+[9.152s] -- Up-to-date: /home/ichbinwil/Documents/Aruco_ros/install/aruco/share/aruco/local_setup.dsv
+[9.152s] -- Installing: /home/ichbinwil/Documents/Aruco_ros/install/aruco/share/aruco/package.dsv
+[9.152s] -- Up-to-date: /home/ichbinwil/Documents/Aruco_ros/install/aruco/share/ament_index/resource_index/packages/aruco
+[9.152s] -- Up-to-date: /home/ichbinwil/Documents/Aruco_ros/install/aruco/share/aruco/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.152s] -- Up-to-date: /home/ichbinwil/Documents/Aruco_ros/install/aruco/share/aruco/cmake/arucoConfig.cmake
+[9.152s] -- Up-to-date: /home/ichbinwil/Documents/Aruco_ros/install/aruco/share/aruco/cmake/arucoConfig-version.cmake
+[9.153s] -- Up-to-date: /home/ichbinwil/Documents/Aruco_ros/install/aruco/share/aruco/package.xml
+[9.155s] Invoked command in '/home/ichbinwil/Documents/Aruco_ros/build/aruco' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ichbinwil/Documents/Aruco_ros/build/aruco
