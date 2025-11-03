@@ -1,0 +1,6 @@
+aruco_detect:
+  ros__parameters:
+    marker_size: 5.0 #cm
+    camera_frame: "camera_link"
+    tf_to: "base_link"
+    path_cam: "/dev/v4l/by-id/usb-BC-231018-A_XWF_1080P_PC_Camera-video-index0"
