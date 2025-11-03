@@ -59,7 +59,7 @@ public:
 
         // --- ArUco Dictionary ---
         dictionary = aruco::getPredefinedDictionary(aruco::DICT_5X5_100);
-        markerLength = 5.0; // cm
+        markerLength = marker_size_cm; // cm
 
         float m = markerLength / 2.0f;
         objectPoints = {
@@ -137,7 +137,7 @@ private:
 
                     geometry_msgs::msg::TransformStamped t;
                     t.header.stamp = this->get_clock()->now();
-                    t.header.frame_id = "camera_link";
+                    t.header.frame_id = camera_frame;
                     t.child_frame_id = "aruco_marker_" + std::to_string(markerIds[i]);
                     t.transform.translation.x = tvec[0] / 100.0;
                     t.transform.translation.y = tvec[1] / 100.0;
@@ -151,14 +151,15 @@ private:
                     // --- Dapatkan transform base_link -> aruco_marker ---
                     try {
                         auto transform = tf_buffer_->lookupTransform(
-                            "base_link",
+                            tf_to,
                             t.child_frame_id,
                             tf2::TimePointZero
                         );
 
                         RCLCPP_INFO(this->get_logger(),
-                            "Marker %d wrt base_link: (%.2f, %.2f, %.2f)",
+                            "Marker %d wrt %s: (%.2f, %.2f, %.2f)",
                             markerIds[i],
+                            tf_to.c_str(),
                             transform.transform.translation.x,
                             transform.transform.translation.y,
                             transform.transform.translation.z
